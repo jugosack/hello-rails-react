@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Messages</h1>
+
+<div id="api_v1_messages">
+  <% @api_v1_messages.each do |api_v1_message| %>
+    <%= render api_v1_message %>
+    <p>
+      <%= link_to "Show this message", api_v1_message %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New message", new_api_v1_message_path %>

@@ -1,10 +1,10 @@
-<%= form_with(model: api_v1_message) do |form| %>
-  <% if api_v1_message.errors.any? %>
+<%= form_with(model: message) do |form| %>
+  <% if message.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(api_v1_message.errors.count, "error") %> prohibited this api_v1_message from being saved:</h2>
+      <h2><%= pluralize(message.errors.count, "error") %> prohibited this message from being saved:</h2>
 
       <ul>
-        <% api_v1_message.errors.each do |error| %>
+        <% message.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>

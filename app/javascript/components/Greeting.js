@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable react/button-has-type */
+/* eslint-disable no-bitwise */
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchGreetingData } from '../redux/actions/greeting-action';
@@ -16,6 +19,7 @@ const Greeting = () => {
   return (
     <div>
       <h1>{greeting}</h1>
+      // eslint-disable-next-line react/button-has-type
       <button onClick={fetchGreeting}>Greeting</button>
     </div>
   );

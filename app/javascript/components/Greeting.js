@@ -19,7 +19,6 @@ const Greeting = () => {
   return (
     <div>
       <h1>{greeting}</h1>
-      // eslint-disable-next-line react/button-has-type
       <button onClick={fetchGreeting}>Greeting</button>
     </div>
   );

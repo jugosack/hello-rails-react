@@ -1,11 +1,9 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchGreetingData } from "../redux/actions/greeting-action";
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchGreetingData } from '../redux/actions/greeting-action';
 
 const Greeting = () => {
-  const greetings = useSelector((state) => {
-    return state.greetingSlice.greetings;
-  });
+  const greetings = useSelector((state) => state.greetingSlice.greetings);
 
   const greeting = greetings[(Math.random() * greetings.length) | 0];
 

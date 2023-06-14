@@ -18,7 +18,7 @@ const Greeting = () => {
   return (
     <div>
       <h1>{greeting}</h1>
-      <button onClick={fetchGreeting}>Get a Greeting</button>
+      <button onClick={fetchGreeting}>Greeting message</button>
     </div>
   );
 };
